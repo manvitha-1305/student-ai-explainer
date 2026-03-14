@@ -15,13 +15,30 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
+body,
+div,
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li {
+  color: #111827;
+  -webkit-text-fill-color: #111827;
+}
+
 input,
 textarea {
   color: #111827;
   background-color: #ffffff;
+  -webkit-text-fill-color: #111827;
 }
 
 input::placeholder,
 textarea::placeholder {
   color: #9ca3af;
+  -webkit-text-fill-color: #9ca3af;
 }
