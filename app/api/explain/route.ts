@@ -13,18 +13,15 @@ export async function POST(request: Request) {
     }
 
 const prompt = `
-Explain the topic "${topic}" for a student in simple language.
-
-Format the response in clean markdown using:
-- a short introduction paragraph
-- 3 to 5 bullet points
-- a short conclusion
+Explain the topic "${topic}" in simple language for a student.
 
 Rules:
-- keep it easy to understand
-- avoid difficult words
-- keep it under 150 words
-- do not use very long paragraphs
+- Use plain text only
+- No markdown
+- No bold symbols
+- No bullet symbols
+- Keep it short and clear
+- Write in 2 to 4 small paragraphs
 `;
     const response = await ai.models.generateContent({
       model: "gemini-2.5-flash",
