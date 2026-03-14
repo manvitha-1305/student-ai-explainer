@@ -44,7 +44,7 @@ export default function TopicInput() {
   };
 
   return (
-    <div className="w-full max-w-3xl rounded-2xl bg-white p-8 shadow-lg">
+    <div className="w-full max-w-3xl rounded-2xl bg-white p-8 text-gray-900 shadow-lg">
       <h1 className="mb-2 text-3xl font-bold text-gray-900">
         AI-powered Study Explainer
       </h1>
@@ -54,12 +54,12 @@ export default function TopicInput() {
 
       <div className="flex flex-col gap-4 sm:flex-row">
         <input
-          type="text"
-          value={topic}
-          onChange={(e) => setTopic(e.target.value)}
-          placeholder="Enter a topic like Photosynthesis"
-          className="flex-1 rounded-xl border border-gray-300 px-4 py-3 outline-none focus:border-blue-500"
-        />
+  type="text"
+  value={topic}
+  onChange={(e) => setTopic(e.target.value)}
+  placeholder="Enter a topic like Photosynthesis"
+  className="flex-1 rounded-xl border border-gray-300 bg-white px-4 py-3 text-gray-900 placeholder:text-gray-400 outline-none focus:border-blue-500"
+/>
 
         <button
           onClick={explainTopic}
